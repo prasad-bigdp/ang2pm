@@ -1,0 +1,90 @@
+Javascript Revision:
+   i.  what is the difference between let,var,const?
+  var can redeclare and reassign, let and const cannot redeclare but let can reassign.
+ let and const are block scoped  but var is a function scoped
+     function fun(){
+         if(true)
+          {
+            var x=20;
+           }
+        console.log(x)
+     }
+  ii.  what is a callback function?
+          function in the parameters of another function
+        function x(){
+        }
+        function y(a){
+           a()
+        }
+        y(x)
+      
+   iii.  how to implement class in javascript
+             class is a container/collection of objects/blueprint of an object. class contains methods and attributes
+          class Teacher{
+              name;salary;subject;
+              teach();
+          }
+     create an object to class:
+         let obj=new Teacher() 
+     Every class have a constructor which will be invoked 
+     automatically when an object is created. constructor is default method which is used to initialize values
+         class Teacher{
+                name;salary;subject;
+                 constructor(a,b,c){
+                      this.name=a,
+                      this.salary=b,
+                      this.subject=c
+                 }
+               }     
+              let obj= new Teacher("prasad",35000,"physics")
+             console.log(obj.name)
+
+     classes have inheritance(child classes aquire properties from parent class)
+          class Staff extends Teacher {
+               id;
+              constructor(x,a,b,c){
+                 super(a,b,c);
+                 this.id=x;
+                }
+           }
+      let obj2 = new Staff(25,"shekhar",55000,"maths")
+     console.log(obj2.name);
+
+iv.  what is ES6 module system ?
+          ES6 module system is used to make communication between multiple js/ts files.
+   it uses two keywords , 'export' for exporting a value/method
+   'import' for importing a value
+      we can export lot of values but only one default values.
+      we can import all the values within {} but default values doesn't need any braces 
+
+In JS, there are datatypes (number,string,boolean,undefined,null ,array,object)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+
+
+

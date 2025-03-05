@@ -1,0 +1,45 @@
+Angular:
+--------------
+course requirements: HTML,CSS, JS (arrays,objects,loops, fetch,functions,classes and ES6)
+course duration: 30 sessions
+course Topics:
+   i. js revision
+   ii. typescript
+   iii. Angular Intro
+   iv. Hello world & project flow
+    v.  Data Binding (one way)
+   vi. Data Binding(two way)
+   vii. Decorators used in angular
+   viii. components
+             i. nested components
+            ii. parent to child
+           iii. child to parent
+    ix. Directives
+             i. ngIf
+            ii. ngSwitch
+            iii. ngFor
+             iv. ngClass & ngStyle
+             v. custom
+    x. pipes
+            i. default pipes
+            ii. custom pipes
+   xi. services
+           i. basic services & dependency injection
+          ii. httpClient
+  xii. Angular Routing
+            i. routing, child routing
+            ii. not found
+           iii. auth guards
+  xiii.  forms
+            i. Template driven forms
+            ii. reactive forms
+  xiv. life cycle methods
+  xv.  angular crud with bootstrap and material
+
+FINAL PROJECT (Real time ecommerce )
+
+course Timings: 2.05 - 2.10   ---- 3.45-3.50
+
+git&github , netlify, vscode
+
+

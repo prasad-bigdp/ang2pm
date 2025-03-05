@@ -1,0 +1,184 @@
+Typescript:
+Typescript is used to provide static datatyping to JS. Typescript is a superset of javascript. In 2012, microsoft launched the typescript and make it as open source. current version of typescript is 5.8.
+why do we need typescript?
+   i. Typescript is open source
+  ii. it simplifies js code and provide static typing like other languages
+  iii. it saves developers time and helps us to avoid painful bugs
+  iv. Typescript is nothing but javascript with some added datatypes/features.
+
+  Installation:
+     To install or uninstall any library/package, we need npm(node package manager). To install npm, we need to install 'nodejs'
+   i. goto nodejs.org/en/download
+ ii. download .msi windows file
+iii. after installing, verify by going to "cmd" and type commands "npm -v" and "node -v"
+iv. Type in "cmd" 
+--> npm install -g typescript@latest
+v. verify version by cmd "tsc -v"
+
+To Practise or learn , goto the link "https://www.typescriptlang.org/play"
+
+1. Datatypes declaration:
+            In Typescript, Datatypes can be declared in two ways
+     i. Typescript inference
+   ii. Typescript annotation
+    
+   Typescript inference: it means typescript will infer(guess) the data type based on value and will make it as static.
+eg: // Typescript inference
+let a="prasad"
+a=35;
+The aboves code gets an error, "type number is not assignable to type string "
+
+  Typescript annotation: it will suggest datatypes by user followed by colon to the variable(:)
+  eg: let b:number=25;
+It is always preferable to annotate the type for clean and easy code
+
+2. Different Datatypes:
+    i. number : it is used for any numerical value
+          eg: let a:number=60;
+   ii. string: it is used for any alphanumerical values. they are repesented by '' or "" or ``
+         eg: let str:string="prasad"
+  iii. boolean: it is used to represent true or false
+        eg: let x:boolean=true;
+  iv. undefined : it is used to represent accidental absence of value.
+       eg: let z:undefined=undefined;
+  v. null : it is used to represent intentional absence of value (null)
+      eg: let k:null =null;
+
+union operator: union operator helps us to define datatype to an element with multiple datatypes. it is represented by '|'
+  for eg: let a:number|string = 25;
+
+  vi. arrays: array is collection of similar datatype elements
+        let x:number[]= [5,4,3]
+       let j:(number|string)[]=[5,"raj"]
+
+ vii. Tuple: Tuple is a array of elements with fixed length and each element's datatype will be mentioned manually.
+let k:[number,string,number]=[25,"raj",25]
+
+viii. Enum : enum is used to define constant values
+       enum days{
+             sunday,
+             monday,
+             tuesday
+       }
+ix. any: any means any datatype. 'any' will toggle off typescript
+    let x:any =true;
+Functions:   functions are used to do a particular task.
+  syntax:  
+function function-name(parameter:datatype,...):return type
+{
+    //body
+}  
+   eg: function sum(a:number,b:number):number
+         {
+             return  a+b;
+         }
+
+       sum(5,3)
+  x. void: void is the datatype of functions which won't return. it is return type
+      eg: function display():void
+               {
+                   console.log("hello world")
+                }
+ xi.  never :  never is return type used for functionss that are not supposed to return , indicates values that will never occur
+
+function display2():never{
+   throw new Error("my error")
+}
+
+xii.  type Alias : it is a custom type that can be created using user defined syntax.
+  type emp = {
+      eid:number,
+      ename:string,
+      salary:number
+}
+let x:emp = { eid:4, name:"raj",salary:25000 }
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
