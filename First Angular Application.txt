@@ -1,0 +1,64 @@
+First Angular Application:
+   step 1: verify Angular version by "ng v" and make sure angular is installed.
+   step 2: open VSCode(incase it's not there , download it) and goto specific folder(file>open folder)
+   step 3: goto terminal --> new terminal ---> command prompt and select the folder using 'cd'
+  step 4: type "ng new app-name --standalone=false"
+  and select (yes, CSS, no)
+
+Folder structure:
+ Angular creates whole application with tht following folder structure
+  1.tsconfig.json : config files are the rule files. tsconfig will set rules to TSC
+  2. tsconfig.app.json : tsconfig app is used to set rules to TSC but only for current app
+  3.tsconfig.spec.json : spec files are used for the testing. tsconfig .spec.json is used to set rules for TSC but for testing environment
+4. Readme.md : it is a instruction file which can be used for humans(devs)
+5. package.json : it is used for meta data (data about data)
+6. package-lock.json : it is used for meta data of package.json
+7. angular.json : it is the setting file for angular apps
+8. .gitignore -- it contains files which needs to be ignored by git
+9. .editorconfig -- it contains support for all editors
+10. node_modules -- it contains all the packages installed
+11. public -- it contains all the public files like images,documents
+12. src -- actual source code of application will be inside src folder
+      index.html -- It is the main HTML file responsible for the view
+     style.css -- it is the main css file responsible for the style of whole application
+    main.ts  -- it is the main ts file responsible for the typescript of whole application
+    But angular creates a component named app and use it inside index.html as 'app-root'.
+13. src/app : It contains details of complete app component.
+     app.module.ts -- modules controls the components. it bootstraps the app components(Bootstrapping means converting static DOM into Dynamic DOM)
+    app-routing.module.ts -- it is the routing module which contains info about all routings
+    A component contains 4 files
+       1. component.html  -- it is for view of the application
+        2. component.ts -- it is for Logic of the application
+       3. component.css -- it is for styling of the application
+       4. component.spec.ts --it is for the testing of the application
+
+=============================================
+To Run Angular Application goto terminal--> command prompt --> cd specific folder --> ng serve -o
+
+To build your application, use command "ng build"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
