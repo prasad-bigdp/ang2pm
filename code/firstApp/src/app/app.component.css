@@ -1,0 +1,9 @@
+.box{
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px black;
+    height: 50vh;
+   padding: 100px;
+}
+.box img{
+    height: 300px;
+}

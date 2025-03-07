@@ -1,0 +1,50 @@
+Angular:
+      Angular is a Javascript framework which is used to create single page applications and progressive web apps
+framework vs library:
+    library is a pre written code used for specific purpose.
+    framework provides complete environment needed for development. it provides a structure to the code.
+React vs Angular:
+    React is a library of Javascript and Angular is a framework of javascript.
+    React is developed & maintained by meta . Angular is developed & maintained by Google.
+   React and Angular both uses component Approach.
+   React can use JS & TS both. Angular uses TS.
+   React uses one way data binding and Angular uses two way data binding
+ 
+
+History of Angular: 
+     In 2010, google developed a JS framework called 
+'Angular JS' which is used with JS but due to dynamic typing of js, it got multiple probelms.
+    In 2012, microsoft created TS. Due to that, In 2013, Google added TS to Angular JS and implemented new version called
+  ' Angular ' or Angular 2 or Angular+
+
+Eg: gmail
+Angular  ---- let x:number =20;
+Angular JS --- let x=20;
+
+Current version of Angular is Angular 19
+
+Installing angular:
+i. To install angular, your system must have npm and tsc(you need to download and install nodejs and install typescript,
+ :npm install -g typescript")
+2. goto cmd and type "npm install -g @angular/cli@latest"
+3. check the version by typing "ng v" in cmd
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

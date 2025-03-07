@@ -93,6 +93,28 @@ xii.  type Alias : it is a custom type that can be created using user defined sy
 }
 let x:emp = { eid:4, name:"raj",salary:25000 }
 
+xiii. interfaces: it is used to represent objects. it provides structure to the objects
+    interface obj{ 
+      eid:number,
+      ename:string,
+      salary:number
+     }
+interfaces uses keyword 'interface' and interefaces can do inheritance using 'extends' keyword. Type aliases uses keyword 'type' and cannot perform inheritance. we can connect interfaces to classes using 'implements' method.
+class x implements obj{
+      eid:number,
+      ename:string,
+      salary:number
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
