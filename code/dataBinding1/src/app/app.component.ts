@@ -7,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'firstApp';
+  name: string = "PRASAD";
+  title='';
+  fun() {
+    console.log("hello");
+    this.name="hello"
+  }
 }

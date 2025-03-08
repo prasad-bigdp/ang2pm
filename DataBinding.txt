@@ -1,0 +1,68 @@
+Angular uses  components as the Building Blocks of the application. It divides whole User Interface into multiple reusable parts called as components
+ components are used for reusability, modularity and flexibility in application
+
+ Every component created in angular will have 4 files. These four files are only for that component
+   component-name.component.html
+   component-name.component.ts
+   component-name.component.css
+   component-name.component.spec.ts
+
+1. component.html file is also called as Template file. it is used for view
+2. component.ts file is also called as component file. it is used for logic (model & controller)
+3. component.css file is also called as styling file. it is used for design and style and it is optional
+4. .spec.ts file is also called testing file. it is used for unit testing
+
+Data Binding: It is a mechanism that connects template(html) and component(ts) files of a component
+  There are two ways of Data Binding possible in Angular.
+  i. one way Data binding
+  ii. Two way Data Binding
+
+  i.one way Data Binding: Using One way Data Binding, we can connect data from component file to template file or template file to component file
+    a. component file to template File:
+       String Interpolation: we can send values  from component to template using String Interpolation. it uses double braces {{}}
+       eg: //app.component.ts
+       export class AppComponent{
+         fruitname:string="apple"
+       }
+       //app.component.html
+       <p> My fav fruit is {{fruitname}} </p>
+    event Binding: It is used to send event or triggere a function by an event from HTML(Template) to TS(component)
+    //app.component.html
+    <button (click)="display()">click me</button>
+    //app.component.ts
+     export class AppComponent{
+          display(){
+            console.log("hello world")
+          }
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
