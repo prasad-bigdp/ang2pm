@@ -35,6 +35,16 @@ Data Binding: It is a mechanism that connects template(html) and component(ts) f
             console.log("hello world")
           }
       }
+   Property Binding: String Interpolation always takes the from TS(component) to HTML(template) as a string no matter what it's actual type. so, it is recommanded to use property binding for 
+   all the properties from TS to HTML.  Property Binding uses sqaure brackets to wrap properties/attributes.
+   eg: //app.component.ts
+   export class AppComponent{
+      url="https://www.google.com";
+      isRequired=false;
+   }
+   //app.component.html
+   <a [href]="url">click me</a>
+   <input type="text" [required]="isRequired" />
 
 
 
