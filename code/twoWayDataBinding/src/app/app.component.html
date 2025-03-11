@@ -1,0 +1,17 @@
+<!-- <input type="text" placeholder="Enter a value" [(ngModel)]="data">
+<p>{{data}}</p> -->
+
+<div class="box">
+  <div class="left">
+      <input type="text" placeholder="Enter URL of image" [(ngModel)]="imgUrl">
+       <input type="text" placeholder="Enter the name" [(ngModel)]="name">
+       <input type="text" placeholder="Enter the name" [(ngModel)]="name2">
+      <button (click)="handleSubmit()">submit</button>
+  </div>
+  <div class="right">
+        <h2>{{name1}}</h2>
+    <img [src]="imgUrl1" alt="image">
+        <h2>{{name2}}</h2>
+
+  </div>
+</div>

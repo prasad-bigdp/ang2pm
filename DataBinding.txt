@@ -46,7 +46,23 @@ Data Binding: It is a mechanism that connects template(html) and component(ts) f
    <a [href]="url">click me</a>
    <input type="text" [required]="isRequired" />
 
+  2. Two way Data Binding: 
+     In angular , it is possible to send the data from HTML to TS or TS to HTML of a component at a time.
+     To achieve this we need to use "ngModel" to implement two way data binding. ngModel is available in formsModule.
 
+     step 1: import formsModule since it has ngModel in app.module.ts
+     also write it in imports
+     //app.module.ts
+     import {formsModule} from '@angular/forms'
+     imports: [formsModule]
+     
+     //app.component.ts
+     export class AppComponent{
+      data:string=''
+     }
+
+     //app.component.html
+     <input placeholder="enter text" type="text" [(ngModel)]="data" />
 
 
 
