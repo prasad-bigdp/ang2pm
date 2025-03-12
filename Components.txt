@@ -1,0 +1,4 @@
+Component: Component is the reusable part of the UI(user Interface). Components can be kept one inside another called nested component.
+To create a component command is:
+    ng generate component component-name 
+

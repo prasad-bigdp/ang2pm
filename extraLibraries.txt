@@ -1,0 +1,17 @@
+1. for tailwind, please install, npm install tailwindcss @tailwindcss/postcss postcss
+
+2. Create a .postcssrc.json file in the root of your project and add the @tailwindcss/postcss plugin to your PostCSS configuration.
+
+.postcssrc.json
+{
+  "plugins": {
+    "@tailwindcss/postcss": {}
+  }
+}
+
+3. goto src/styles.css
+@import "tailwindcss";
+
+add Extension Tailwind CSS IntelliSense
+Tailwind Labs
+tailwindcss.com

@@ -1,0 +1,17 @@
+Decorators are a fundamental concept in angular , allowing you to add metadata in your components.
+Decorators are special kinds of functions that can modify or extend the behaviour of a class, method or property.
+Angular uses different decorators for components, directives,pipes,services,modules etc..,
+
+Eg: 
+@component  extends a class with metadata like templateUrl,styleUrl,selector etc..,
+@ngModule extends a function with metadata like provides,imports,bootstrap etc..,
+similarly angular provides
+@pipes -- for pipes
+@Inject -- for services
+@Injectable -- for services
+@Directive -- for Directive
+@Input -- to provide Input
+@output -- to Provide output
+@viewChild,@viewChildren -- to see child components Data
+
+
