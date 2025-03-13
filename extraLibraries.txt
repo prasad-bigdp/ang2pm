@@ -3,6 +3,7 @@
 2. Create a .postcssrc.json file in the root of your project and add the @tailwindcss/postcss plugin to your PostCSS configuration.
 
 .postcssrc.json
+
 {
   "plugins": {
     "@tailwindcss/postcss": {}

@@ -2,3 +2,54 @@ Component: Component is the reusable part of the UI(user Interface). Components 
 To create a component command is:
     ng generate component component-name 
 
+Nested Components:  component Inside another component is called Nested Components
+eg: //app.component.html
+<app-movie></app-movie>
+
+Here app-movie is the child component and app.component.html is parent component
+
+Communication between the components:
+   components can send data from parent to child or child to parent or any other components too.
+  Parent to child:
+    Parent component can send data to child component in two ways
+    i. @Input
+    ii. content projection
+
+    i.@Input() :
+    Parent component can send data to child components as attributes/properties but those values are received by Child components using @Input() decorator
+
+    //app.component.html
+    <app-details name="prasad" age="28" ></app-details>
+    <app-details name="shekhar" age="54" ></app-details>
+    <app-details name="suresh" age="49" ></app-details>
+
+     //details.component.ts
+     @Input() name='';
+     @Input() age=0;
+
+      //details.component.html
+      <div>
+         <h2>{{name}}</h2>
+         <p>{{age}}</p>
+      </div>
+
+    ii. content-projection: it allows parent component to project some content into child components template directly using ng-content element
+    //app.component.html
+    <app-details>
+         <h2>Prasad</h2>
+         <p>28</p>
+    </app-details>
+    <app-details>
+         <h2>shekhar</h2>
+         <p>54</p>
+    </app-details>
+
+    //details.component.html
+       <ng-content></ng-content>
+
+
+
+
+
+
+
